@@ -1,4 +1,5 @@
 class HeroinesController < ApplicationController
+
   def index
     @heroines = Heroine.all
   end
@@ -35,6 +36,8 @@ private
 def heroines_params
 params.require(:heroine).permit(:name, :super_name, :power_id)
 end
+
+
 end
 
 
