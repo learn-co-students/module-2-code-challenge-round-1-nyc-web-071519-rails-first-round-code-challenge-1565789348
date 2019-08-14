@@ -1,2 +1,4 @@
 <h1><%=@power.name.titleize%></h1>
 <h3>Description: <%=@power.description%></h3>
+
+<%=button_to 'All powers', powers_path, method: 'get'%>
