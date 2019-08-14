@@ -19,7 +19,7 @@ end
 def create
   @heroine = Heroine.create(heroines_params)
    if @heroine.valid?
-   redirect_to heroines_path
+   redirect_to heroine_path(@heroine)
    else
     flash[:errors] = @heroine.errors.full_messages 
     redirect_to new_heroine_path
