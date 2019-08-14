@@ -1,0 +1,9 @@
+<h2>Heroines Show Page</h2>
+
+<p><%= @heroine.name %></p>
+<p><%= @heroine.super_name %></p>
+
+<%power = Power.find(@heroine.power_id)%>
+<p><a href = <%=power_path(power)%>><%= power.name %></a></p>
+
+
