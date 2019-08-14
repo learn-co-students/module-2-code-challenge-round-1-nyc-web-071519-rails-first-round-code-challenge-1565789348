@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.create-button {
+  color: #25aae1;
+  font-family: "Poppins", sans-serif;
+  padding: 1em;
+}

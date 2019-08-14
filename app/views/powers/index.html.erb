@@ -2,11 +2,13 @@
 
 <ul>
   <% @powers.each do |power| %>
-    <li>
-      <%= power.name %>
+    <a href="/powers/<%= power.id%>"><li>
+      <%= power.name %></a>
       <br>
       Description: <%= power.description %>
     </li>
     <br>
   <% end %>
 </ul>
+
+<%= link_to  "Heroines", heroines_path %>

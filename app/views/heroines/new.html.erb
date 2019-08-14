@@ -1,0 +1,11 @@
+<h1>Create a Superhero</h1>
+
+<% if flash[:errors] %>
+    <% flash[:errors].each do |error| %>
+    <p><%= error %></p>
+    <% end %>
+<% end %>
+
+<%= render  "form" %>  
+<br>
+<%= link_to  "Back to Heroines", heroines_path %>

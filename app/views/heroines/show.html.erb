@@ -1,0 +1,9 @@
+<h1><%= @heroine.super_name.split('').join(' ').upcase %></h1>
+
+<h3>Name: <%= @heroine.name %></h3>
+
+<h3>Power: <a href="/powers/<%=@power.id %>"><%= @power.name.capitalize %> </a></h3>
+
+<%= button_to  'Delete', heroine_path(@heroine), method: 'delete'%>
+<br>
+<%= link_to  "Back to Heroines", heroines_path %>   
