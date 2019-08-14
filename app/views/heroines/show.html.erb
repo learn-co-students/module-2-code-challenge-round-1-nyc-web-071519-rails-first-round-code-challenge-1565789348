@@ -1,0 +1,4 @@
+<h1><%= @heroine.super_name %></h1>
+<h3>Secret Identity: <%= @heroine.name %> </h3>
+<h3>Power: <a href="../powers/<%=@heroine.power_id%>"><%= @powers.find(@heroine.power_id).name %> </h3></a>
+
