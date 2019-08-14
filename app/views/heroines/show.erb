@@ -1,0 +1,10 @@
+
+<h1> About This Hero!!</h1> 
+
+<ol>
+<p> <b> Real Name: </b> <%= @heroine.name %> <br/> </p>
+<p> <b> Hero Name: </b> <%= @heroine.super_name %> </p>
+<p><b> Power: </b> <%= link_to @heroine.power.name, power_path(@heroine.power) %> <---- CLICK HERE TO FIND OUR ABOUT THE POWER!</p>
+</ol>
+
+<%= link_to "Back Home", heroines_path%>

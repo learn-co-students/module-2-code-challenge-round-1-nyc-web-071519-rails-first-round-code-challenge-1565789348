@@ -1,10 +1,19 @@
 <h2>All Heroines</h2>
 
+<%= link_to "Create Super Hero", new_heroine_path%>
+<br/>
+<br/>
+<%= link_to "View All Powers", powers_path%>
+
 <ul>
   <% @heroines.each do |heroine| %>
-    <li>
-      <%= heroine.super_name %>
-    </li>
-    <br>
+    
+      <p><%= link_to heroine.super_name, heroine_path(heroine) %></p>
+      ---<%= link_to "Delete Heroine", heroine, method: :delete%>---
+      <br/>
+      <br/>
+    
   <% end %>
 </ul>
+
+

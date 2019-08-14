@@ -1,12 +1,20 @@
 <h2>All Superpowers</h2>
 
-<ul>
+<%= link_to "Create Your Own Power", new_power_path%>
+<br/>
+<br/>
+<%= link_to "View All Heroines", heroines_path%>
+
+
+
+<ol>
   <% @powers.each do |power| %>
     <li>
-      <%= power.name %>
+      <%= link_to power.name, power_path(power) %>
       <br>
       Description: <%= power.description %>
     </li>
     <br>
   <% end %>
-</ul>
+</ol>
+
